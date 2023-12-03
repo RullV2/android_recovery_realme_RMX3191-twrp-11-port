@@ -172,7 +172,7 @@ TW_INCLUDE_LOGICAL := my_product my_engineering my_company my_carrier my_region 
 TW_NO_HAPTICS := true
 TW_FRAMERATE := 60
 TW_OVERRIDE_SYSTEM_PROPS := \
-    "ro.build.date.utc;ro.build.product"
+    "ro.build.product"
 TW_INCLUDE_LIBRESETPROP := true
 TW_INCLUDE_RESETPROP := true
 TW_INCLUDE_REPACKTOOLS := true
