@@ -147,21 +147,7 @@ fw=${bl:$((${#bl} - 4)):4}
 device=${bl:0:$((${#bl} - 8))}
 mft=$(getprop ro.product.manufacturer | tr '[A-Z]' '[a-z]')
 
-if [ "$mft" != realme ]; then
-  echo " - Device appears not to be made by Realme."
-  fatal=false
-elif [ -z "$device" ]; then
-  echo " - Could not determine device model."
-  fatal=false
-elif [ $major -lt 9 ]; then
-  echo " - This software is incompatible with Android $major."
-  fatal=false
-fi
-if [ -n "$fatal" ]; then
-  echo " - Installation aborted."
-  echo " "
-  exit 1
-fi
+
 
 echo " - Detected a $device device with a $fw bootloader."
 echo " - The environment appears to be Android $major."
