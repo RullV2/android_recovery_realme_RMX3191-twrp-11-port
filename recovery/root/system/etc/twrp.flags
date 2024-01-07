@@ -1,9 +1,9 @@
 # mount point   device                  fstype          flags
-system          /system                 ext4            display="System";logical
-vendor          /vendor                 ext4            display="Vendor";logical
-product         /product                ext4            display="Product";logical
-odm             /odm                    ext4            display="ODM";logical
-system_ext      /system_ext             ext4            display="System_ext";logical
+/system_image           emmc    /dev/block/mapper/system       flags=display="System image";flashimg=1;backup=1
+/vendor_image           emmc    /dev/block/mapper/vendor       flags=display="Vendor image";flashimg=1;backup=1
+/product_image          emmc    /dev/block/mapper/product      flags=display="Product image";flashimg=1;backup=1
+/odm_image              emmc    /dev/block/mapper/odm          flags=display="Odm image";flashimg=1;backup=1
+/system_ext_image        emmc    /dev/block/mapper/system_ext       flags=display="System_ext image";flashimg=1;backup=1
 
 # mount point    fstype    device                         flags
 
