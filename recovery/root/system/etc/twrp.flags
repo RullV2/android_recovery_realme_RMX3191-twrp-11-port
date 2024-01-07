@@ -3,7 +3,8 @@
 /vendor_image           emmc    /dev/block/mapper/vendor       flags=display="Vendor image";flashimg=1;backup=1
 /product_image          emmc    /dev/block/mapper/product      flags=display="Product image";flashimg=1;backup=1
 /odm_image              emmc    /dev/block/mapper/odm          flags=display="Odm image";flashimg=1;backup=1
-/system_ext_image        emmc    /dev/block/mapper/system_ext       flags=display="System_ext image";flashimg=1;backup=1
+system_ext      /system_ext             ext4            display="System_ext";logical
+
 
 # mount point    fstype    device                         flags
 
